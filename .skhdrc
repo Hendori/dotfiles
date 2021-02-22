@@ -76,12 +76,6 @@
 # A REFERENCE ONLY, WHEN MAKING YOUR OWN CONFIGURATION..          #
 # ############################################################### #
 
-#focus window
-alt - h : yabai -m window --focus west
-alt - l : yabai -m window --focus east
-alt - j : yabai -m window --focus south
-alt - k : yabai -m window --focus north
-
 #swap managed window
 shift + alt - h : yabai -m window --swap west
 shift + alt - l : yabai -m window --swap east
@@ -89,8 +83,8 @@ shift + alt - j : yabai -m window --swap south
 shift + alt - k : yabai -m window --swap north
 
 #move managed window
-#hyper - h : yabai -m window --warp west
-#hyper - l : yabai -m window --warp east
+#alt - h : yabai -m window --warp west
+#alt - l : yabai -m window --warp east
 
 #balance size of windows
 shift + alt - 0 : yabai -m space --balance
@@ -112,14 +106,14 @@ cmd + alt - x : yabai -m space --focus recent
 cmd + alt - 1 : yabai -m space --focus 1
 
 #send window to desktop and follow focus (doing this with mac shortcuts because focus doesn't work
-hyper - l : yabai -m window --space next; skhd -k "ctrl - l"
-hyper - h : yabai -m window --space prev; skhd -k "ctrl - h"
-hyper - 1 : yabai -m window --space  1; skhd -k "ctrl - 1"
-hyper - 2 : yabai -m window --space  2; skhd -k "ctrl - 2"
-hyper - 3 : yabai -m window --space  3; skhd -k "ctrl - 3"
-hyper - 4 : yabai -m window --space  4; skhd -k "ctrl - 4"
-hyper - 5 : yabai -m window --space  5; skhd -k "ctrl - 5"
-hyper - 6 : yabai -m window --space  6; skhd -k "ctrl - 6"
+alt - l : yabai -m window --space next; skhd -k "ctrl - l"
+alt - h : yabai -m window --space prev; skhd -k "ctrl - h"
+alt - 1 : yabai -m window --space  1; skhd -k "ctrl - 1"
+alt - 2 : yabai -m window --space  2; skhd -k "ctrl - 2"
+alt - 3 : yabai -m window --space  3; skhd -k "ctrl - 3"
+alt - 4 : yabai -m window --space  4; skhd -k "ctrl - 4"
+alt - 5 : yabai -m window --space  5; skhd -k "ctrl - 5"
+alt - 6 : yabai -m window --space  6; skhd -k "ctrl - 6"
 
 #focus monitor
 ctrl + alt - z  : yabai -m display --focus prev
@@ -130,40 +124,28 @@ ctrl + cmd - c  : yabai -m window --display next; yabai -m display --focus next
 ctrl + cmd - 1  : yabai -m window --display 1; yabai -m display --focus 1
 
 #Lock mac with
-hyper - q : pmset displaysleepnow
+alt - q : pmset displaysleepnow
 
 #increase window size
-hyper - a : yabai -m window --resize left:-20:0 ; yabai -m window --resize right:-20:0
-hyper - d : yabai -m window --resize left:20:0 ; yabai -m window --resize right:20:0
-hyper - w : yabai -m window --resize top:0:-20 ; yabai -m window --resize bottom:0:-20 
-hyper - s : yabai -m window --resize top:0:20 ; yabai -m window --resize bottom:0:20
+alt - a : yabai -m window --resize left:-20:0 ; yabai -m window --resize right:-20:0
+alt - d : yabai -m window --resize left:20:0 ; yabai -m window --resize right:20:0
+alt - w : yabai -m window --resize top:0:-20 ; yabai -m window --resize bottom:0:-20 
+alt - s : yabai -m window --resize top:0:20 ; yabai -m window --resize bottom:0:20
 
 #rotate
-hyper - r : yabai -m space --rotate 90
-
-#set insertion point in focused container
-ctrl + alt - h : yabai -m window --insert west
+alt - r : yabai -m space --rotate 90
 
 #toggle window zoom
-hyper - d : yabai -m window --toggle zoom-parent
-hyper - f : yabai -m window --toggle zoom-fullscreen
+alt - d : yabai -m window --toggle zoom-parent
+alt - f : yabai -m window --toggle zoom-fullscreen
 
 #toggle window split type
 alt - e : yabai -m window --toggle split
 
-#float / unfloat window and center on screen
-alt - t : yabai -m window --toggle float;\
-          yabai -m window --grid 4:4:1:1:2:2
-
-#toggle sticky(+float), topmost, picture-in-picture
-alt - p : yabai -m window --toggle sticky;\
-          yabai -m window --toggle topmost;\
-          yabai -m window --toggle pip
-
 # quick keys for important programs
-hyper - i : open -a IntelliJ\ IDEA
-hyper - t : open -a iTerm
-hyper - b : open -a Brave\ Browser
-hyper - c : open -a Discord
-hyper - m : open -a Mail
-hyper - n : open -a Microsoft\ Teams
+alt - i : open -a IntelliJ\ IDEA
+alt - t : open -a iTerm
+alt - b : open -a Brave\ Browser
+alt - c : open -a Discord
+alt - m : open -a Mail
+alt - n : open -a Microsoft\ Teams
