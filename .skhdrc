@@ -148,5 +148,4 @@ alt - t : open -a iTerm
 alt - b : open -a Brave\ Browser
 alt - c : open -a Discord
 alt - m : open -a Mail
-alt - n : open -a Microsoft\ Teams
-# lalala
+alt - n : skhd -k "ctrl - 6"; osascript ~/gitrepos/dotfiles/teamsScript.scpt
