@@ -7,6 +7,7 @@ export PATH=$PATH:/opt/apache-maven/bin
 export LC_ALL=en_US.UTF-8
 export PATH="/usr/local/sbin:$PATH"
 export PATH="/usr/local/bin:$PATH"
+
 #
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -123,3 +124,5 @@ eval $(thefuck --alias)
 export SDKMAN_DIR="/Users/hendrieleveld/.sdkman"
 [[ -s "/Users/hendrieleveld/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/hendrieleveld/.sdkman/bin/sdkman-init.sh"
 setJDK8
+
+[[ -s $HOME/.nvm/nvm.sh ]] && . $HOME/.nvm/nvm.sh  # This loads NVM 
