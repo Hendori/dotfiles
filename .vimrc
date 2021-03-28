@@ -136,3 +136,4 @@ autocmd! bufwritepost .vimrc source %
 autocmd FileType tex nmap <buffer> T :!open -a Skim %:r.pdf<CR><CR>
 augroup latex
 autocmd BufWritePost *.tex silent! execute "!latexmk % -pdf -bibtex" | redraw!
+autocmd FileType tex setlocal spell

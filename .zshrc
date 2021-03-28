@@ -7,6 +7,7 @@ export PATH=$PATH:/opt/apache-maven/bin
 export LC_ALL=en_US.UTF-8
 export PATH="/usr/local/sbin:$PATH"
 export PATH="/usr/local/bin:$PATH"
+export PATH="/usr/local/opt/m4/bin:$PATH"
 
 #
 # Set name of the theme to load --- if set to "random", it will
@@ -123,6 +124,7 @@ eval $(thefuck --alias)
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="/Users/hendrieleveld/.sdkman"
 [[ -s "/Users/hendrieleveld/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/hendrieleveld/.sdkman/bin/sdkman-init.sh"
-setJDK8
 
-[[ -s $HOME/.nvm/nvm.sh ]] && . $HOME/.nvm/nvm.sh  # This loads NVM 
+[[ -s $HOME/.nvm/nvm.sh ]] && . $HOME/.nvm/nvm.sh  # This loads NVM
+
+neofetch
