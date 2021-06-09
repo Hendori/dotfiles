@@ -146,6 +146,5 @@ alt - e : yabai -m window --toggle split
 alt - i : open -a IntelliJ\ IDEA
 alt - t : open -a iTerm
 alt - b : open -a Brave\ Browser
-alt - c : open -a Discord
 alt - m : open -a Mail
 alt - n : skhd -k "ctrl - 7"; open -a Microsoft\ Teams
