@@ -3,7 +3,7 @@
 
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/hendrieleveld/.oh-my-zsh"
-export PATH=$PATH:/opt/apache-maven/bin
+export PATH=$PATH:/opt/apache-maven-3.8.2/bin
 export LC_ALL=en_US.UTF-8
 export PATH="/usr/local/sbin:$PATH"
 export PATH="/usr/local/bin:$PATH"

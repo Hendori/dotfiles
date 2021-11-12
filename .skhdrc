@@ -106,25 +106,26 @@ cmd + alt - x : yabai -m space --focus recent
 cmd + alt - 1 : yabai -m space --focus 1
 
 #send window to desktop and follow focus (doing this with mac shortcuts because focus doesn't work
-alt - l : yabai -m window --space next; skhd -k "ctrl - l"
-alt - h : yabai -m window --space prev; skhd -k "ctrl - h"
-alt - 1 : yabai -m window --space  1; skhd -k "ctrl - 1"
-alt - 2 : yabai -m window --space  2; skhd -k "ctrl - 2"
-alt - 3 : yabai -m window --space  3; skhd -k "ctrl - 3"
-alt - 4 : yabai -m window --space  4; skhd -k "ctrl - 4"
-alt - 5 : yabai -m window --space  5; skhd -k "ctrl - 5"
-alt - 6 : yabai -m window --space  6; skhd -k "ctrl - 6"
+hyper - l : yabai -m window --space next; skhd -k "ctrl - l"
+hyper - h : yabai -m window --space prev; skhd -k "ctrl - h"
+hyper - 1 : yabai -m window --space  1; skhd -k "ctrl - 1"
+hyper - 2 : yabai -m window --space  2; skhd -k "ctrl - 2"
+hyper - 3 : yabai -m window --space  3; skhd -k "ctrl - 3"
+hyper - 4 : yabai -m window --space  4; skhd -k "ctrl - 4"
+hyper - 5 : yabai -m window --space  5; skhd -k "ctrl - 5"
+hyper - 6 : yabai -m window --space  6; skhd -k "ctrl - 6"
 
 #focus monitor
 ctrl + alt - z  : yabai -m display --focus prev
 ctrl + alt - 3  : yabai -m display --focus 3
 
 #send window to monitor and follow focus
-ctrl + cmd - c  : yabai -m window --display next; yabai -m display --focus next
+alt - j : yabai -m window --display next; yabai -m display --focus next
+alt - k : yabai -m window --display previous; yabai -m display --focus previous
 ctrl + cmd - 1  : yabai -m window --display 1; yabai -m display --focus 1
 
 #Lock mac with
-alt - q : pmset displaysleepnow
+hyper - q : pmset displaysleepnow
 
 #increase window size
 alt - a : yabai -m window --resize left:-20:0 ; yabai -m window --resize right:-20:0
@@ -136,15 +137,18 @@ alt - s : yabai -m window --resize top:0:20 ; yabai -m window --resize bottom:0:
 alt - r : yabai -m space --rotate 90
 
 #toggle window zoom
-alt - d : yabai -m window --toggle zoom-parent
-alt - f : yabai -m window --toggle zoom-fullscreen
+hyper - d : yabai -m window --toggle zoom-parent
+hyper - f : yabai -m window --toggle zoom-fullscreen
 
 #toggle window split type
 alt - e : yabai -m window --toggle split
 
 # quick keys for important programs
-alt - i : open -a IntelliJ\ IDEA
-alt - t : open -a iTerm
-alt - b : open -a Brave\ Browser
-alt - m : open -a Mail
-alt - n : skhd -k "ctrl - 7"; open -a Microsoft\ Teams
+hyper - i : open -a IntelliJ\ IDEA
+hyper - t : open -a iTerm
+hyper - b : open -a Brave\ Browser
+hyper - m : open -a Mail
+hyper - n : skhd -k "ctrl - 7"; open -a Microsoft\ Teams
+hyper - u : open -a Music
+hyper - s : open -a Sublime\ Text
+
