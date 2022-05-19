@@ -141,7 +141,7 @@ hyper - d : yabai -m window --toggle zoom-parent
 hyper - f : yabai -m window --toggle zoom-fullscreen
 
 #toggle window split type
-alt - e : yabai -m window --toggle split
+hyper - e : yabai -m window --toggle split
 
 # quick keys for important programs
 hyper - i : open -a IntelliJ\ IDEA
